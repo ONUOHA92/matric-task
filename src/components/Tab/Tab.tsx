@@ -51,10 +51,6 @@ function TabComponent() {
         setValue(newValue);
     };
 
-
-
-
-
     return (
         <Container>
             <Box sx={{ width: '100%' }} className="TabComponent">
