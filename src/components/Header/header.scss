@@ -1,0 +1,18 @@
+$Primary-color: #4A4A4A;
+.wrapper {
+    margin-top: 20px;
+    h1 {
+        color: $Primary-color;
+        height: 28px;
+        left: 23.83%;
+        margin-left: 9%;
+        margin-top: 8%;
+        right: 65.31%;
+        top: calc(50% - 28px/2 - 332.7px);
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
