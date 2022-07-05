@@ -1,13 +1,10 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
-import { Stack, Card, Grid, Container } from '@mui/material';
+import { Stack, Grid, Container } from '@mui/material';
 import './table.scss'
 import Box from '@mui/material/Box';
-import fliter from '../../assets/images/filter.png'
-import combine from '../../assets/images/combine.png'
 import { data } from '../../data/data';
 
 
@@ -18,8 +15,6 @@ interface TabPanelProps {
     value: number;
 
 }
-
-
 
 function TabPanel(props: TabPanelProps) {
     const { children, value, index, ...other } = props;
@@ -50,16 +45,12 @@ function a11yProps(index: number) {
 
 
 function TabComponent() {
-    const theme = useTheme();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
 
-    const handleChangeIndex = (index: number) => {
-        setValue(index);
-    };
 
 
 
